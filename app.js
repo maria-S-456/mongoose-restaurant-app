@@ -2,8 +2,8 @@ var express = require('express');
 var mongoose = require('mongoose');
 var app = express();
 
-var db = mongoose.connect('mongodb://localhost/dataset'); //change "api" to "dataset" to use the restaurant database
-var Cat = require('./models/catModel.js');
+var db = mongoose.connect('mongodb://localhost/mariadata'); //change "api" to "dataset" to use the restaurant database
+var Cat = require('./models/catModel.js');				//dataset
 var rest = require('./models/restaurantModel.js');
 
 var port = 3000;
